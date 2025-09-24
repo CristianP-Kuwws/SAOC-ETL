@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "E5lajz7sfmE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hazky\\source\\repos\\SAOC\\SAOC.Persistence\\SAOC.Persistence.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hazky\\.nuget\\packages\\csvhelper\\33.1.0\\csvhelper.33.1.0.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.20\\microsoft.entityframeworkcore.8.0.20.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.20\\microsoft.entityframeworkcore.abstractions.8.0.20.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.20\\microsoft.entityframeworkcore.analyzers.8.0.20.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.13\\microsoft.entityframeworkcore.relational.8.0.13.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.9\\microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.logging\\9.0.9\\microsoft.extensions.logging.9.0.9.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.9\\microsoft.extensions.logging.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.options\\9.0.9\\microsoft.extensions.options.9.0.9.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.9\\microsoft.extensions.primitives.9.0.9.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.3\\pomelo.entityframeworkcore.mysql.8.0.3.nupkg.sha512",
+    "C:\\Users\\hazky\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.9\\system.diagnostics.diagnosticsource.9.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

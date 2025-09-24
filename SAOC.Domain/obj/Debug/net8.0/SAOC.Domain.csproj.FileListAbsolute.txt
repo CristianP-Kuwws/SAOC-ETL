@@ -1,0 +1,11 @@
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\bin\Debug\net8.0\SAOC.Domain.deps.json
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\bin\Debug\net8.0\SAOC.Domain.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\bin\Debug\net8.0\SAOC.Domain.pdb
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\SAOC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\SAOC.Domain.AssemblyInfoInputs.cache
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\SAOC.Domain.AssemblyInfo.cs
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\SAOC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\SAOC.Domain.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\refint\SAOC.Domain.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\SAOC.Domain.pdb
+C:\Users\hazky\source\repos\SAOC\SAOC.Domain\obj\Debug\net8.0\ref\SAOC.Domain.dll

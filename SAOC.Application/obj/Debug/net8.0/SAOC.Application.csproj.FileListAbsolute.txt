@@ -1,0 +1,15 @@
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\bin\Debug\net8.0\SAOC.Application.deps.json
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\bin\Debug\net8.0\SAOC.Application.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\bin\Debug\net8.0\SAOC.Application.pdb
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\bin\Debug\net8.0\SAOC.Domain.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\bin\Debug\net8.0\SAOC.Domain.pdb
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.csproj.AssemblyReference.cache
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.AssemblyInfoInputs.cache
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.AssemblyInfo.cs
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.csproj.CoreCompileInputs.cache
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.App.8C1B3598.Up2Date
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\refint\SAOC.Application.dll
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\SAOC.Application.pdb
+C:\Users\hazky\source\repos\SAOC\SAOC.Application\obj\Debug\net8.0\ref\SAOC.Application.dll
