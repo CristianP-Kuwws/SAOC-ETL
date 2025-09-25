@@ -1,0 +1,16 @@
+# Build results
+bin/
+obj/
+.vs/
+
+# User-specific
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
+
+# Debug / Release
+*.dll
+*.pdb
+*.exe
