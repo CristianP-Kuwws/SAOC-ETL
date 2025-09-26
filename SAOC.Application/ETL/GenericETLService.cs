@@ -17,6 +17,9 @@ namespace SAOC.Application.ETL
         private readonly IBaseRepository<TDto> _repository;
         private readonly IValidator<TDto> _validator;
 
+        // *** MÉTODO SIMPLE PARA CONVERTIR CÓDIGOS ***
+        private readonly string[] _codeProperties = { "IdFuente", "IdComment", "IdReview", "IdCliente", "IdProducto" };
+
         public GenericETLService(IBaseRepository<TDto> repository, IValidator<TDto> validator)
         {
             _repository = repository;
@@ -36,6 +39,8 @@ namespace SAOC.Application.ETL
                 using (var reader = new StreamReader(csvPath))
                 using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                 {
+                    csv.Context.Configuration.HeaderValidated = null;
+                    csv.Context.Configuration.MissingFieldFound = null;
                     items = csv.GetRecords<TDto>().ToList();
                 }
 
@@ -43,22 +48,25 @@ namespace SAOC.Application.ETL
                 int invalidCount = 0;
                 int duplicateCount = 0;
 
-                // Remove null 
+                // Remove nulls
                 var nonNullItems = items.Where(x => x != null).ToList();
                 nullCount = items.Count - nonNullItems.Count;
 
-                // Normalize and validate
+                // Normalize, convert codes and validate
                 var validItems = new List<TDto>();
                 foreach (var item in nonNullItems)
                 {
-                    // Normalize 
+                    // Normalize strings
                     foreach (var prop in typeof(TDto).GetProperties()
-                           .Where(p => p.PropertyType == typeof(string) && p.CanRead && p.CanWrite))
+                               .Where(p => p.PropertyType == typeof(string) && p.CanRead && p.CanWrite))
                     {
                         var val = (string?)prop.GetValue(item);
                         if (!string.IsNullOrWhiteSpace(val))
                             prop.SetValue(item, val.Trim().ToUpperInvariant());
                     }
+
+                    // Convert code properties to int
+                    ConvertCodesToInts(item);
 
                     // Validate
                     var result = _validator.Validate(item);
@@ -68,7 +76,7 @@ namespace SAOC.Application.ETL
                         invalidCount++;
                 }
 
-                // Detect duplicates (hardcoded by StartsWith for now)
+                // Detect duplicates by Id*
                 var idProp = typeof(TDto).GetProperties()
                     .FirstOrDefault(p => p.Name.StartsWith("Id", StringComparison.OrdinalIgnoreCase));
 
@@ -79,7 +87,6 @@ namespace SAOC.Application.ETL
                         .GroupBy(x => idProp.GetValue(x))
                         .Select(g => g.First())
                         .ToList();
-
                     duplicateCount = validItems.Count - distinctItems.Count;
                 }
 
@@ -97,6 +104,31 @@ namespace SAOC.Application.ETL
             catch (Exception ex)
             {
                 throw new ApplicationException($"Error executing ETL for {typeof(TDto).Name}.", ex);
+            }
+        }
+
+        // *** MÉTODO SIMPLE PARA CONVERTIR CÓDIGOS ***
+        private void ConvertCodesToInts(TDto item)
+        {
+            foreach (var propName in _codeProperties)
+            {
+                var prop = typeof(TDto).GetProperty(propName);
+                if (prop?.CanRead == true && prop.CanWrite)
+                {
+                    var value = prop.GetValue(item)?.ToString();
+                    if (!string.IsNullOrEmpty(value))
+                    {
+                        // Extraer números: F001 -> 1, C123 -> 123
+                        var numbers = new string(value.Where(char.IsDigit).ToArray());
+                        if (int.TryParse(numbers, out var intValue))
+                        {
+                            if (prop.PropertyType == typeof(int) || prop.PropertyType == typeof(int?))
+                                prop.SetValue(item, intValue);
+                            else if (prop.PropertyType == typeof(string))
+                                prop.SetValue(item, intValue.ToString());
+                        }
+                    }
+                }
             }
         }
     }
