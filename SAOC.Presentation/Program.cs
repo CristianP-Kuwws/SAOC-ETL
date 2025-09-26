@@ -79,7 +79,7 @@ class Program
                 foreach (var p in products)
                 {
                     Console.WriteLine(
-                        $"IdProducto: {p.IdProducto}, Nombre: {p.Nombre}, Categoría: {p.Categoría}"
+                        $"IdProducto: {p.IdProducto}, Nombre: {p.Nombre}, Categoria: {p.Categoría}"
                     );
                 }
                 // ETL
