@@ -8,10 +8,7 @@ namespace SAOC.Domain.Entities
 {
     public class Product
     {
-        /** IdProducto,Nombre,Categoría
-            1,Producto_1,Juguetes **/
-
-        public string IdProducto { get; set; }
+        public int IdProducto { get; set; }
         public string Nombre { get; set; }
         public string Categoría { get; set; }
     }

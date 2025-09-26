@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsvHelper.Configuration.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,9 @@ namespace SAOC.Application.Dtos.Product
 {
     public record ProductDto
     {
-        public string IdProducto { get; set; }
+        public int IdProducto { get; set; }
         public string Nombre { get; set; }
         public string Categoría { get; set; }
+
     }
 }

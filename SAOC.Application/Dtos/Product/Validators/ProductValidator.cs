@@ -12,12 +12,11 @@ namespace SAOC.Application.Dtos.Product.Validators
         public ProductValidator()
         {
             RuleFor(x => x.IdProducto)
-                .NotEmpty().WithMessage("IdProducto is required")
-                .MaximumLength(10).WithMessage("IdProducto can't exceed 10 characters.");
+                .GreaterThan(0).WithMessage("IdProducto must be a positive integer.");
 
             RuleFor(x => x.Nombre)
                 .NotEmpty().WithMessage("Nombre is required")
-                .MaximumLength(25).WithMessage("Nombre can't exceed 25 characters.");
+                .MaximumLength(50).WithMessage("Nombre can't exceed 50 characters.");
 
             RuleFor(x => x.Categoría)
                 .NotEmpty().WithMessage("Categoría is required")

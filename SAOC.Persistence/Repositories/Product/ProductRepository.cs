@@ -4,7 +4,6 @@ using SAOC.Application.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SAOC.Persistence.Repositories.Product
@@ -46,7 +45,6 @@ namespace SAOC.Persistence.Repositories.Product
             {
                 throw new Exception($"Error while inserting products. Inner: {ex.Message}", ex);
             }
-
         }
     }
 }
